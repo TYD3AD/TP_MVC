@@ -1,7 +1,7 @@
 <?php
 
 $DB_SERVER = getenv("MVC_SERVER") ?: "localhost";
-$DB_DATABASE = getenv("MVC_DB") ?: "TP_MVC";
+$DB_DATABASE = getenv("MVC_DB") ?: "tp_mvc";
 $DB_USER = getenv("MVC_USER") ?: "root";
 $DB_PASSWORD = getenv("MVC_TOKEN") ?: "";
 $DEBUG = getenv("MVC_DEBUG") ?: true;

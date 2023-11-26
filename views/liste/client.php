@@ -55,12 +55,13 @@
         </div>
         <div class="flex flex-row items-center">
             <form action="liste" method="GET">
-                <select name="nbLignesParPages" id="nbLignesParPages">
+                <label for="nbLignesParPages">Ligne par page : </label>
+                <select name="nbLignesParPages" id="nbLignesParPages" class="appearance-none">
                     <?php
                     if ($nbLignesParPages != 10 && $nbLignesParPages != 20 && $nbLignesParPages != 50 && $nbLignesParPages != 100) { ?>
-                        <option selected value="<?= $nbLignesParPages ?>"><?= $nbLignesParPages ?></option>
+                        <option selected value="<?= $nbLignesParPages ?>"><?= $nbLignesParPages ?>&#11206;</option>
                     <?php } ?>
-                    <option value="10">10</option>
+                    <option value="10">10 </option>
                     <option value="20">20</option>
                     <option value="50">50</option>
                     <option value="100">100</option>
