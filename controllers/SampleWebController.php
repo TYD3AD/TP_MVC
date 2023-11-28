@@ -17,8 +17,5 @@ class SampleWebController extends WebController
         return "Voilà votre paramètre : $parametre";
     }
 
-    function client($id)
-    {
-        echo "Voici le client avec l'identifiant $id";
-    }
+    
 }

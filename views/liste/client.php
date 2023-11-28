@@ -40,7 +40,7 @@
                             <td class='border border-gray-300'><?= $client->getTelephone() ?></td>
                             <td class='border border-gray-300'><?= $client->getEmail() ?></td>
                             <td class='border border-gray-300'>
-                                <form action="/client/<?=$client->getID()?>">
+                                <form action="/client/<?= $client->getID() ?>" method="GET">
                                     <input type="hidden" name="id" value="<?= $client->getID() ?>">
                                     <input type="submit" class='bg-blue-500 text-white px-4 py-2 rounded-full' value="Modifier">
                                 </form>
@@ -69,14 +69,14 @@
             </form>
             <?php
             if ($page != 0) { ?>
-                <a href="liste?page=<?= $page - 1 ?>&nbLignesParPages=<?= $nbLignesParPages ?>" class="m-2">
+                <a href="/liste?page=<?= $page - 1 ?>&nbLignesParPages=<?= $nbLignesParPages ?>" class="m-2">
                     < </a>
 
                     <?php }
 
                 if ($page != $nbPages) {
                     ?>
-                        <a href="liste?page=<?= $page + 1 ?>&nbLignesParPages=<?= $nbLignesParPages ?>" class="m-2"> > </a>
+                        <a href="/liste?page=<?= $page + 1 ?>&nbLignesParPages=<?= $nbLignesParPages ?>" class="m-2"> > </a>
                     <?php
                 }
                     ?>
